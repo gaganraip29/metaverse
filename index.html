@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft.js</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="info">
+    <div id="info-player-position"></div>
+  </div>
+  <div id="toolbar-container">
+    <div id="toolbar">
+      <!-- Ensure these IDs toolbar-1 to toolbar-9 match the block IDs you want for keys 1-9 -->
+      <!-- The src should be the texture for that block -->
+      <!-- Example for first 8 placeable blocks + pickaxe (0) -->
+      <img class="toolbar-icon" id="toolbar-1" src="/textures/grass.png">      <!-- Block ID 1 -->
+      <img class="toolbar-icon" id="toolbar-2" src="/textures/dirt.png">       <!-- Block ID 2 -->
+      <img class="toolbar-icon" id="toolbar-3" src="/textures/stone.png">      <!-- Block ID 3 -->
+      <img class="toolbar-icon" id="toolbar-4" src="/textures/coal_ore.png">   <!-- Block ID 4 -->
+      <img class="toolbar-icon" id="toolbar-5" src="/textures/iron_ore.png">   <!-- Block ID 5 -->
+      <img class="toolbar-icon" id="toolbar-6" src="/textures/tree_top.png">   <!-- Block ID 6 (Oak Log) -->
+      <img class="toolbar-icon" id="toolbar-7" src="/textures/leaves.png">     <!-- Block ID 7 (Oak Leaves) -->
+      <img class="toolbar-icon" id="toolbar-8" src="/textures/sand.png">       <!-- Block ID 8 (Sand) -->
+      <!-- If you have a block for ID 9 you want on toolbar for key '9' -->
+      <!-- <img class="toolbar-icon" id="toolbar-9" src="/textures/YOUR_BLOCK_ID_9_TEXTURE.png"> --> <!-- Block ID 9 (e.g. could be snow if you re-ID) -->
+      <!-- The rest of your items from the screenshot are beyond the 1-9 keys with current setup -->
+      <!-- Pickaxe is ID 0, selected by Digit0 -->
+      <img class="toolbar-icon selected" id="toolbar-0" src="/textures/pickaxe.png">
+    </div>
+  </div>
+  <div id="overlay" style="display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); color: white; flex-direction: column; z-index: 1000;">
+    <div id="instructions" style="text-align: center; background: rgba(50,50,50,0.8); padding: 20px; border-radius: 10px;">
+      <h1>MINECRAFT JS</h1> <!-- Corrected typo -->
+      WASD - Move<br>
+      SHIFT - Sprint<br>
+      SPACE - Jump<br>
+      R - Reset Player Position<br>
+      U - Toggle Controls UI Panel<br>
+      0-9 - Select Tool/Block<br>
+      F10 - Unlock Mouse for Debug Camera<br><br>
+      <h2>PRESS ANY KEY TO START</h2>
+      <p id="connection-status" style="margin-top: 20px;">Connecting to server...</p>
+    </div>
+  </div>
+  <div id="status"></div>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>

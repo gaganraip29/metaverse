@@ -1,0 +1,34 @@
+{
+  "name": "minecraft-test-2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.156.1"
+  },
+  "description": "A simple Minecraft clone built with Three.js.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaganraip29/minecraft.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaganraip29/minecraft/issues"
+  },
+  "homepage": "https://github.com/gaganraip29/minecraft#readme"
+}
