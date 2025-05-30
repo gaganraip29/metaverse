@@ -28,7 +28,7 @@ export class Player {
     new THREE.MeshBasicMaterial({ wireframe: true, transparent: true, opacity: 0.5 })
   );
 
-  raycaster = new THREE.Raycaster(new THREE.Vector3(), new THREE.Vector3(0, 0, -1), 0.1, 10);
+  raycaster = new THREE.Raycaster(new THREE.Vector3(), new THREE.Vector3(0, 0, -1), 0.1,5);
   selectedCoords = null;
   activeBlockId = blocks.empty.id;
 
